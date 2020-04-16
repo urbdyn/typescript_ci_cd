@@ -24,6 +24,11 @@
   "homepage": "https://github.com/urbdyn/typescript_ci_cd#readme",
   "devDependencies": {
     "@types/node": "^13.11.1",
+    "@types/tape": "^4.2.34",
+    "tape": "^4.13.2",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
   }
 }
