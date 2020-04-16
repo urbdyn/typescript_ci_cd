@@ -1,0 +1,29 @@
+{
+  "name": "typescript_ci_cd",
+  "version": "1.0.0",
+  "description": "Example repository for doing CI/CD with Typescript, Github, and AWS.",
+  "main": "dist/src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./dist/test/main",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbdyn/typescript_ci_cd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urbdyn/typescript_ci_cd/issues"
+  },
+  "homepage": "https://github.com/urbdyn/typescript_ci_cd#readme",
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "typescript": "^3.8.3"
+  }
+}
