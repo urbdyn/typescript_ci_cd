@@ -7,9 +7,14 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest dist/test/main.test",
     "build": "tsc",
-    "dev": "tsc --watch"
+    "build:production": "npm run prestart && npm prune --production",
+    "dev": "tsc --watch",
+    "watch": "tsc --w",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start": "npm-run-all --parallel start:host watch",
+    "test": "jest dist/test/main.test"
   },
   "repository": {
     "type": "git",
@@ -23,12 +28,12 @@
   },
   "homepage": "https://github.com/urbdyn/typescript_ci_cd#readme",
   "devDependencies": {
+    "@azure/functions": "^1.2.0",
     "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
-    "@types/tape": "^4.2.34",
     "jest": "^25.3.0",
-    "tape": "^4.13.2",
+    "npm-run-all": "^4.1.5",
     "typescript": "^3.8.3"
   },
   "dependencies": {

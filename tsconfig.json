@@ -4,6 +4,8 @@
         "module": "commonjs",
         "declaration": true,
         "outDir": "./dist",
+        "rootDir": ".",
+        "strict": false,
         "importHelpers": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
