@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node ./dist/test/main",
+    "test": "jest dist/test/main.test",
     "build": "tsc",
     "dev": "tsc --watch"
   },
@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/urbdyn/typescript_ci_cd#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
     "@types/tape": "^4.2.34",
+    "jest": "^25.3.0",
     "tape": "^4.13.2",
     "typescript": "^3.8.3"
   },
